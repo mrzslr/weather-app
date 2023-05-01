@@ -1,0 +1,57 @@
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    margin: 10px;
+  }
+  
+  .switch-label {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: white;
+    border: solid 1px black;
+    transition: background-color 0.2s;
+  }
+  
+  .switch-label-text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    color: black;
+    font-size: 14px;
+  }
+  .switch-label-text.on {
+    left: 0;
+  }
+  .switch-label-text.off {
+    right: 0;
+  }
+  
+  .switch-label-text span {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .switch-label .switch-button {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: white;
+    border: solid 1px black;
+    transition: transform 0.2s;
+  }
+  
+  .switch-checkbox:checked + .switch-label .switch-button {
+    transform: translateX(110%);
+  }

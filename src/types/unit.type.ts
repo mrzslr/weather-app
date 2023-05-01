@@ -1,0 +1,1 @@
+export declare type UnitType = "imperial" | "metric";

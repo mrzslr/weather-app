@@ -1,0 +1,17 @@
+@import "./base/spacing";
+@import "./base/fonts";
+@import "./base/colors";
+@import "./base/typography";
+@import "./base/breakpoints";
+
+@import "./pages/search-screen";
+@import "./pages/weather-info-screen";
+
+@import "./weather-icons/weather-icons.min.scss";
+
+body {
+  background: linear-gradient(#fd746b, #ff8f67);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
